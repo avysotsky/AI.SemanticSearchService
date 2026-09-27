@@ -1,0 +1,9 @@
+bin/
+obj/
+.vs/
+.idea/
+.local/
+config.json
+*.user
+TestResults/
+
