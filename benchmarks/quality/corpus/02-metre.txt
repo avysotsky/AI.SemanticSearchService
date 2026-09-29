@@ -1,0 +1,3 @@
+The metre, symbol m, is the SI base unit of length. Its definition fixes the speed of light in vacuum at 299 792 458 metres per second.
+
+Provenance: BIPM, The International System of Units (SI Brochure), 9th edition, version 3.01 (2025), https://doi.org/10.59161/AUEZ1291

@@ -6,4 +6,5 @@ obj/
 config.json
 *.user
 TestResults/
+benchmarks/quality/results-*.json
 

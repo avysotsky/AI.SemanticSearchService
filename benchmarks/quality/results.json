@@ -1,0 +1,1199 @@
+﻿{
+    "status":  "completed",
+    "measuredAtUtc":  "2026-09-29T12:53:26.1624600+00:00",
+    "datasetVersion":  "si-brochure-v1",
+    "provenance":  {
+                       "kind":  "project-authored controlled factual corpus",
+                       "sourceTitle":  "BIPM, The International System of Units (SI Brochure), 9th edition, version 3.01 (2025)",
+                       "sourceUri":  "https://doi.org/10.59161/AUEZ1291",
+                       "authorship":  "Benchmark document wording and questions were authored for this repository from the cited source.",
+                       "judgmentMethod":  "Deterministic document/chunk targets. Every short TXT document is expected to produce exactly ingestion chunk sequence 0. No human relevance review is claimed.",
+                       "limitations":  "Controlled one-fact documents; not representative of production document length or domain distribution."
+                   },
+    "scope":  {
+                  "ownerId":  "benchmark-runner",
+                  "tenantId":  "benchmark-si-v1-20260929t1255z"
+              },
+    "documentCount":  30,
+    "questionCount":  30,
+    "recallAt5":  1,
+    "mrr":  0.87777777777777788,
+    "latencyMs":  {
+                      "p50":  62.8427,
+                      "p95":  125.0822
+                  },
+    "documents":  {
+                      "joule":  "51cf64b7-6a8c-46eb-9c9f-3e0639b56526",
+                      "ampere":  "c47a79ca-f003-442e-9700-f2fa8e598042",
+                      "weber":  "2d45e0c7-92ea-46ee-8529-cf862b39bef5",
+                      "volt":  "ac94b0f1-dc82-4f65-9800-369270681a0f",
+                      "quetta":  "d9dd8f72-8f2e-41ea-9612-138fa4f38d7c",
+                      "henry":  "37fd8b8b-0f81-4785-92ae-86fbe73821f4",
+                      "becquerel":  "c5b00a7d-a086-4e85-8a28-2a54ee3a6815",
+                      "katal":  "340352a0-1c91-40d9-beaa-993f141bc8b4",
+                      "kelvin":  "a624620a-33bf-4fa0-9fe5-1ac27f2ab0bf",
+                      "watt":  "0fb2dbc9-db5e-4b29-badd-7544a83ede89",
+                      "ohm":  "0c2e3655-e755-47a0-8d76-56c7039d4108",
+                      "pascal":  "268ccaf7-a287-484b-ae67-899a88321ade",
+                      "steradian":  "a887c79c-897b-4f02-8fe0-6d71eb3adea8",
+                      "kilogram":  "764fb059-9857-4f25-927c-7580744f95cf",
+                      "coulomb":  "2c25847d-88ac-41ff-8a88-d5dd8b759318",
+                      "farad":  "83f933ec-2e89-4f00-9924-0ae6a420b5e5",
+                      "mole":  "79d87dcf-10b4-46d1-82e7-7a9e5a576639",
+                      "hertz":  "f15b5432-d5b7-4170-91b0-94770fd3baa5",
+                      "degree-celsius":  "9b8466d7-8006-4434-af69-0cce66b7c7ea",
+                      "lumen":  "3404d631-db49-4881-9f49-65244c6519e7",
+                      "gray":  "96e2a56a-d54b-4093-84fd-1ccbf35c4188",
+                      "sievert":  "7238abdf-0e0a-4e37-8b2f-de07a8bd01df",
+                      "candela":  "5a209c74-8be2-4fd4-b9d7-7223b4d8c4f7",
+                      "siemens":  "a7461526-aea7-4aa7-b3d1-b0d41edc0b1d",
+                      "newton":  "bd449f02-1f83-480a-af5c-7592a75a875c",
+                      "tesla":  "51f9ad4a-8932-44b5-9acb-cd4afd99f732",
+                      "second":  "2d58d3bf-2d9d-46f4-9246-ccc81ab1c9ab",
+                      "lux":  "f9847ce2-5ddd-4cf4-8016-c96a382950ff",
+                      "radian":  "1a0a3bcf-4f7d-450b-92cf-db0696535ce5",
+                      "metre":  "8ee9d2b2-b69a-40c8-99a8-8b903e78c214"
+                  },
+    "questions":  [
+                      {
+                          "questionKey":  "q-001",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  1,
+                          "latencyMs":  476.253,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "2d58d3bf-2d9d-46f4-9246-ccc81ab1c9ab",
+                                           "sequence":  0,
+                                           "score":  1
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "a624620a-33bf-4fa0-9fe5-1ac27f2ab0bf",
+                                           "sequence":  0,
+                                           "score":  0.96896383186705759
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "764fb059-9857-4f25-927c-7580744f95cf",
+                                           "sequence":  0,
+                                           "score":  0.96080586080586083
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "5a209c74-8be2-4fd4-b9d7-7223b4d8c4f7",
+                                           "sequence":  0,
+                                           "score":  0.953125
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "8ee9d2b2-b69a-40c8-99a8-8b903e78c214",
+                                           "sequence":  0,
+                                           "score":  0.945909645909646
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-002",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  1,
+                          "latencyMs":  71.835,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "8ee9d2b2-b69a-40c8-99a8-8b903e78c214",
+                                           "sequence":  0,
+                                           "score":  1
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "5a209c74-8be2-4fd4-b9d7-7223b4d8c4f7",
+                                           "sequence":  0,
+                                           "score":  0.97251861042183618
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "2d58d3bf-2d9d-46f4-9246-ccc81ab1c9ab",
+                                           "sequence":  0,
+                                           "score":  0.968253968253968
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "0fb2dbc9-db5e-4b29-badd-7544a83ede89",
+                                           "sequence":  0,
+                                           "score":  0.92880356283100618
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "a624620a-33bf-4fa0-9fe5-1ac27f2ab0bf",
+                                           "sequence":  0,
+                                           "score":  0.9242424242424242
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-003",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  1,
+                          "latencyMs":  57.415,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "764fb059-9857-4f25-927c-7580744f95cf",
+                                           "sequence":  0,
+                                           "score":  1
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "a624620a-33bf-4fa0-9fe5-1ac27f2ab0bf",
+                                           "sequence":  0,
+                                           "score":  0.9799667178699436
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "8ee9d2b2-b69a-40c8-99a8-8b903e78c214",
+                                           "sequence":  0,
+                                           "score":  0.96081149193548376
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "2d58d3bf-2d9d-46f4-9246-ccc81ab1c9ab",
+                                           "sequence":  0,
+                                           "score":  0.96080586080586083
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "5a209c74-8be2-4fd4-b9d7-7223b4d8c4f7",
+                                           "sequence":  0,
+                                           "score":  0.92079375848032563
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-004",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  1,
+                          "latencyMs":  74.227,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "c47a79ca-f003-442e-9700-f2fa8e598042",
+                                           "sequence":  0,
+                                           "score":  1
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "2c25847d-88ac-41ff-8a88-d5dd8b759318",
+                                           "sequence":  0,
+                                           "score":  0.9799667178699436
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "2d58d3bf-2d9d-46f4-9246-ccc81ab1c9ab",
+                                           "sequence":  0,
+                                           "score":  0.94212740384615379
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "764fb059-9857-4f25-927c-7580744f95cf",
+                                           "sequence":  0,
+                                           "score":  0.92779720279720279
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "5a209c74-8be2-4fd4-b9d7-7223b4d8c4f7",
+                                           "sequence":  0,
+                                           "score":  0.916815476190476
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-005",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  1,
+                          "latencyMs":  53.014,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "a624620a-33bf-4fa0-9fe5-1ac27f2ab0bf",
+                                           "sequence":  0,
+                                           "score":  1
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "9b8466d7-8006-4434-af69-0cce66b7c7ea",
+                                           "sequence":  0,
+                                           "score":  0.98387096774193539
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "2d58d3bf-2d9d-46f4-9246-ccc81ab1c9ab",
+                                           "sequence":  0,
+                                           "score":  0.96080586080586083
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "764fb059-9857-4f25-927c-7580744f95cf",
+                                           "sequence":  0,
+                                           "score":  0.956907242063492
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "c47a79ca-f003-442e-9700-f2fa8e598042",
+                                           "sequence":  0,
+                                           "score":  0.92811085972850682
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-006",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  1,
+                          "latencyMs":  71.5,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "79d87dcf-10b4-46d1-82e7-7a9e5a576639",
+                                           "sequence":  0,
+                                           "score":  1
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "2d58d3bf-2d9d-46f4-9246-ccc81ab1c9ab",
+                                           "sequence":  0,
+                                           "score":  0.92811085972850682
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "a887c79c-897b-4f02-8fe0-6d71eb3adea8",
+                                           "sequence":  0,
+                                           "score":  0.92779720279720279
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "7238abdf-0e0a-4e37-8b2f-de07a8bd01df",
+                                           "sequence":  0,
+                                           "score":  0.923878835562549
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "37fd8b8b-0f81-4785-92ae-86fbe73821f4",
+                                           "sequence":  0,
+                                           "score":  0.916815476190476
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-007",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  1,
+                          "latencyMs":  69.612,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "5a209c74-8be2-4fd4-b9d7-7223b4d8c4f7",
+                                           "sequence":  0,
+                                           "score":  1
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "8ee9d2b2-b69a-40c8-99a8-8b903e78c214",
+                                           "sequence":  0,
+                                           "score":  0.98387096774193539
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "2d58d3bf-2d9d-46f4-9246-ccc81ab1c9ab",
+                                           "sequence":  0,
+                                           "score":  0.96080586080586083
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "0fb2dbc9-db5e-4b29-badd-7544a83ede89",
+                                           "sequence":  0,
+                                           "score":  0.92111707089552242
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "a624620a-33bf-4fa0-9fe5-1ac27f2ab0bf",
+                                           "sequence":  0,
+                                           "score":  0.91485760971055075
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-008",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  1,
+                          "latencyMs":  68.333,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "1a0a3bcf-4f7d-450b-92cf-db0696535ce5",
+                                           "sequence":  0,
+                                           "score":  1
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "a887c79c-897b-4f02-8fe0-6d71eb3adea8",
+                                           "sequence":  0,
+                                           "score":  0.98387096774193539
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "764fb059-9857-4f25-927c-7580744f95cf",
+                                           "sequence":  0,
+                                           "score":  0.957251082251082
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "5a209c74-8be2-4fd4-b9d7-7223b4d8c4f7",
+                                           "sequence":  0,
+                                           "score":  0.94945913461538456
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "c47a79ca-f003-442e-9700-f2fa8e598042",
+                                           "sequence":  0,
+                                           "score":  0.9141963109354414
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-009",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  1,
+                          "latencyMs":  59.917,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "a887c79c-897b-4f02-8fe0-6d71eb3adea8",
+                                           "sequence":  0,
+                                           "score":  1
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "1a0a3bcf-4f7d-450b-92cf-db0696535ce5",
+                                           "sequence":  0,
+                                           "score":  0.98387096774193539
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "79d87dcf-10b4-46d1-82e7-7a9e5a576639",
+                                           "sequence":  0,
+                                           "score":  0.9242424242424242
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "5a209c74-8be2-4fd4-b9d7-7223b4d8c4f7",
+                                           "sequence":  0,
+                                           "score":  0.920924831081081
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "7238abdf-0e0a-4e37-8b2f-de07a8bd01df",
+                                           "sequence":  0,
+                                           "score":  0.90717948717948715
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-010",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  3,
+                          "latencyMs":  61.071,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "bd449f02-1f83-480a-af5c-7592a75a875c",
+                                           "sequence":  0,
+                                           "score":  0.9799667178699436
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "2c25847d-88ac-41ff-8a88-d5dd8b759318",
+                                           "sequence":  0,
+                                           "score":  0.957251082251082
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "f15b5432-d5b7-4170-91b0-94770fd3baa5",
+                                           "sequence":  0,
+                                           "score":  0.950657894736842
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "2d45e0c7-92ea-46ee-8529-cf862b39bef5",
+                                           "sequence":  0,
+                                           "score":  0.93145809414466119
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "340352a0-1c91-40d9-beaa-993f141bc8b4",
+                                           "sequence":  0,
+                                           "score":  0.92880356283100618
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-011",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  2,
+                          "latencyMs":  56.194,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "764fb059-9857-4f25-927c-7580744f95cf",
+                                           "sequence":  0,
+                                           "score":  0.97618447580645162
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "bd449f02-1f83-480a-af5c-7592a75a875c",
+                                           "sequence":  0,
+                                           "score":  0.97426470588235281
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "2d58d3bf-2d9d-46f4-9246-ccc81ab1c9ab",
+                                           "sequence":  0,
+                                           "score":  0.97215821812596
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "7238abdf-0e0a-4e37-8b2f-de07a8bd01df",
+                                           "sequence":  0,
+                                           "score":  0.956907242063492
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "8ee9d2b2-b69a-40c8-99a8-8b903e78c214",
+                                           "sequence":  0,
+                                           "score":  0.917451205510907
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-012",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  2,
+                          "latencyMs":  60.214,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "bd449f02-1f83-480a-af5c-7592a75a875c",
+                                           "sequence":  0,
+                                           "score":  0.99596774193548376
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "268ccaf7-a287-484b-ae67-899a88321ade",
+                                           "sequence":  0,
+                                           "score":  0.98790322580645162
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "51f9ad4a-8932-44b5-9acb-cd4afd99f732",
+                                           "sequence":  0,
+                                           "score":  0.968253968253968
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "51cf64b7-6a8c-46eb-9c9f-3e0639b56526",
+                                           "sequence":  0,
+                                           "score":  0.94945913461538456
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "f9847ce2-5ddd-4cf4-8016-c96a382950ff",
+                                           "sequence":  0,
+                                           "score":  0.931463068181818
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-013",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  2,
+                          "latencyMs":  45.319,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "bd449f02-1f83-480a-af5c-7592a75a875c",
+                                           "sequence":  0,
+                                           "score":  0.98828125
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "51cf64b7-6a8c-46eb-9c9f-3e0639b56526",
+                                           "sequence":  0,
+                                           "score":  0.98387096774193539
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "268ccaf7-a287-484b-ae67-899a88321ade",
+                                           "sequence":  0,
+                                           "score":  0.96080586080586083
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "8ee9d2b2-b69a-40c8-99a8-8b903e78c214",
+                                           "sequence":  0,
+                                           "score":  0.93585824275362317
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "51f9ad4a-8932-44b5-9acb-cd4afd99f732",
+                                           "sequence":  0,
+                                           "score":  0.93145809414466119
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-014",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  1,
+                          "latencyMs":  44.878,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "0fb2dbc9-db5e-4b29-badd-7544a83ede89",
+                                           "sequence":  0,
+                                           "score":  1
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "51cf64b7-6a8c-46eb-9c9f-3e0639b56526",
+                                           "sequence":  0,
+                                           "score":  0.98387096774193539
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "7238abdf-0e0a-4e37-8b2f-de07a8bd01df",
+                                           "sequence":  0,
+                                           "score":  0.957251082251082
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "2c25847d-88ac-41ff-8a88-d5dd8b759318",
+                                           "sequence":  0,
+                                           "score":  0.956907242063492
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "2d45e0c7-92ea-46ee-8529-cf862b39bef5",
+                                           "sequence":  0,
+                                           "score":  0.931463068181818
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-015",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  2,
+                          "latencyMs":  44.123,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "c47a79ca-f003-442e-9700-f2fa8e598042",
+                                           "sequence":  0,
+                                           "score":  0.99596774193548376
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "2c25847d-88ac-41ff-8a88-d5dd8b759318",
+                                           "sequence":  0,
+                                           "score":  0.98790322580645162
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "a7461526-aea7-4aa7-b3d1-b0d41edc0b1d",
+                                           "sequence":  0,
+                                           "score":  0.964471726190476
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "0c2e3655-e755-47a0-8d76-56c7039d4108",
+                                           "sequence":  0,
+                                           "score":  0.945909645909646
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "37fd8b8b-0f81-4785-92ae-86fbe73821f4",
+                                           "sequence":  0,
+                                           "score":  0.929632482394366
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-016",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  1,
+                          "latencyMs":  75.063,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "ac94b0f1-dc82-4f65-9800-369270681a0f",
+                                           "sequence":  0,
+                                           "score":  1
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "0fb2dbc9-db5e-4b29-badd-7544a83ede89",
+                                           "sequence":  0,
+                                           "score":  0.965515166104959
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "2d45e0c7-92ea-46ee-8529-cf862b39bef5",
+                                           "sequence":  0,
+                                           "score":  0.9440476190476188
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "2c25847d-88ac-41ff-8a88-d5dd8b759318",
+                                           "sequence":  0,
+                                           "score":  0.93585824275362317
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "37fd8b8b-0f81-4785-92ae-86fbe73821f4",
+                                           "sequence":  0,
+                                           "score":  0.90992723492723482
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-017",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  1,
+                          "latencyMs":  63.664,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "83f933ec-2e89-4f00-9924-0ae6a420b5e5",
+                                           "sequence":  0,
+                                           "score":  1
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "2c25847d-88ac-41ff-8a88-d5dd8b759318",
+                                           "sequence":  0,
+                                           "score":  0.97618447580645162
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "ac94b0f1-dc82-4f65-9800-369270681a0f",
+                                           "sequence":  0,
+                                           "score":  0.97215821812596
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "a7461526-aea7-4aa7-b3d1-b0d41edc0b1d",
+                                           "sequence":  0,
+                                           "score":  0.94945913461538456
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "0c2e3655-e755-47a0-8d76-56c7039d4108",
+                                           "sequence":  0,
+                                           "score":  0.945909645909646
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-018",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  1,
+                          "latencyMs":  69.071,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "0c2e3655-e755-47a0-8d76-56c7039d4108",
+                                           "sequence":  0,
+                                           "score":  1
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "ac94b0f1-dc82-4f65-9800-369270681a0f",
+                                           "sequence":  0,
+                                           "score":  0.98387096774193539
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "a7461526-aea7-4aa7-b3d1-b0d41edc0b1d",
+                                           "sequence":  0,
+                                           "score":  0.968253968253968
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "c47a79ca-f003-442e-9700-f2fa8e598042",
+                                           "sequence":  0,
+                                           "score":  0.953125
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "2c25847d-88ac-41ff-8a88-d5dd8b759318",
+                                           "sequence":  0,
+                                           "score":  0.93490675990676
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-019",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  1,
+                          "latencyMs":  63.31,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "a7461526-aea7-4aa7-b3d1-b0d41edc0b1d",
+                                           "sequence":  0,
+                                           "score":  1
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "ac94b0f1-dc82-4f65-9800-369270681a0f",
+                                           "sequence":  0,
+                                           "score":  0.98387096774193539
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "0c2e3655-e755-47a0-8d76-56c7039d4108",
+                                           "sequence":  0,
+                                           "score":  0.968253968253968
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "83f933ec-2e89-4f00-9924-0ae6a420b5e5",
+                                           "sequence":  0,
+                                           "score":  0.93145809414466119
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "37fd8b8b-0f81-4785-92ae-86fbe73821f4",
+                                           "sequence":  0,
+                                           "score":  0.92779720279720279
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-020",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  1,
+                          "latencyMs":  60.328,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "2d45e0c7-92ea-46ee-8529-cf862b39bef5",
+                                           "sequence":  0,
+                                           "score":  1
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "51f9ad4a-8932-44b5-9acb-cd4afd99f732",
+                                           "sequence":  0,
+                                           "score":  0.98387096774193539
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "2d58d3bf-2d9d-46f4-9246-ccc81ab1c9ab",
+                                           "sequence":  0,
+                                           "score":  0.94097920858484241
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "7238abdf-0e0a-4e37-8b2f-de07a8bd01df",
+                                           "sequence":  0,
+                                           "score":  0.90717948717948715
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "ac94b0f1-dc82-4f65-9800-369270681a0f",
+                                           "sequence":  0,
+                                           "score":  0.90385472370766484
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-021",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  1,
+                          "latencyMs":  63.3,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "51f9ad4a-8932-44b5-9acb-cd4afd99f732",
+                                           "sequence":  0,
+                                           "score":  1
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "2d45e0c7-92ea-46ee-8529-cf862b39bef5",
+                                           "sequence":  0,
+                                           "score":  0.97251861042183618
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "a887c79c-897b-4f02-8fe0-6d71eb3adea8",
+                                           "sequence":  0,
+                                           "score":  0.96081149193548376
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "37fd8b8b-0f81-4785-92ae-86fbe73821f4",
+                                           "sequence":  0,
+                                           "score":  0.9504551820728292
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "8ee9d2b2-b69a-40c8-99a8-8b903e78c214",
+                                           "sequence":  0,
+                                           "score":  0.92486064659977718
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-022",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  1,
+                          "latencyMs":  60.583,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "37fd8b8b-0f81-4785-92ae-86fbe73821f4",
+                                           "sequence":  0,
+                                           "score":  1
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "2d45e0c7-92ea-46ee-8529-cf862b39bef5",
+                                           "sequence":  0,
+                                           "score":  0.96896383186705759
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "0fb2dbc9-db5e-4b29-badd-7544a83ede89",
+                                           "sequence":  0,
+                                           "score":  0.968253968253968
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "2c25847d-88ac-41ff-8a88-d5dd8b759318",
+                                           "sequence":  0,
+                                           "score":  0.94945913461538456
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "0c2e3655-e755-47a0-8d76-56c7039d4108",
+                                           "sequence":  0,
+                                           "score":  0.92880356283100618
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-023",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  2,
+                          "latencyMs":  57.356,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "a624620a-33bf-4fa0-9fe5-1ac27f2ab0bf",
+                                           "sequence":  0,
+                                           "score":  0.99596774193548376
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "9b8466d7-8006-4434-af69-0cce66b7c7ea",
+                                           "sequence":  0,
+                                           "score":  0.98790322580645162
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "7238abdf-0e0a-4e37-8b2f-de07a8bd01df",
+                                           "sequence":  0,
+                                           "score":  0.90992723492723482
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "764fb059-9857-4f25-927c-7580744f95cf",
+                                           "sequence":  0,
+                                           "score":  0.90147783251231517
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "c5b00a7d-a086-4e85-8a28-2a54ee3a6815",
+                                           "sequence":  0,
+                                           "score":  0.89563492063492056
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-024",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  2,
+                          "latencyMs":  53.955,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "5a209c74-8be2-4fd4-b9d7-7223b4d8c4f7",
+                                           "sequence":  0,
+                                           "score":  0.99596774193548376
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "3404d631-db49-4881-9f49-65244c6519e7",
+                                           "sequence":  0,
+                                           "score":  0.98790322580645162
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "a887c79c-897b-4f02-8fe0-6d71eb3adea8",
+                                           "sequence":  0,
+                                           "score":  0.957251082251082
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "f9847ce2-5ddd-4cf4-8016-c96a382950ff",
+                                           "sequence":  0,
+                                           "score":  0.90081935975609762
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "7238abdf-0e0a-4e37-8b2f-de07a8bd01df",
+                                           "sequence":  0,
+                                           "score":  0.89926289926289926
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-025",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  1,
+                          "latencyMs":  70.719,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "f9847ce2-5ddd-4cf4-8016-c96a382950ff",
+                                           "sequence":  0,
+                                           "score":  0.99596774193548376
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "3404d631-db49-4881-9f49-65244c6519e7",
+                                           "sequence":  0,
+                                           "score":  0.96896383186705759
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "a887c79c-897b-4f02-8fe0-6d71eb3adea8",
+                                           "sequence":  0,
+                                           "score":  0.953846153846154
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "8ee9d2b2-b69a-40c8-99a8-8b903e78c214",
+                                           "sequence":  0,
+                                           "score":  0.9424556902985074
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "5a209c74-8be2-4fd4-b9d7-7223b4d8c4f7",
+                                           "sequence":  0,
+                                           "score":  0.93227155727155719
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-026",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  1,
+                          "latencyMs":  65.758,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "c5b00a7d-a086-4e85-8a28-2a54ee3a6815",
+                                           "sequence":  0,
+                                           "score":  1
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "f15b5432-d5b7-4170-91b0-94770fd3baa5",
+                                           "sequence":  0,
+                                           "score":  0.9799667178699436
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "340352a0-1c91-40d9-beaa-993f141bc8b4",
+                                           "sequence":  0,
+                                           "score":  0.96081149193548376
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "2c25847d-88ac-41ff-8a88-d5dd8b759318",
+                                           "sequence":  0,
+                                           "score":  0.91044776119402981
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "2d58d3bf-2d9d-46f4-9246-ccc81ab1c9ab",
+                                           "sequence":  0,
+                                           "score":  0.90560224089635843
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-027",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  1,
+                          "latencyMs":  125.082,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "96e2a56a-d54b-4093-84fd-1ccbf35c4188",
+                                           "sequence":  0,
+                                           "score":  1
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "7238abdf-0e0a-4e37-8b2f-de07a8bd01df",
+                                           "sequence":  0,
+                                           "score":  0.98387096774193539
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "51cf64b7-6a8c-46eb-9c9f-3e0639b56526",
+                                           "sequence":  0,
+                                           "score":  0.92664930555555558
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "764fb059-9857-4f25-927c-7580744f95cf",
+                                           "sequence":  0,
+                                           "score":  0.90773809523809523
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "bd449f02-1f83-480a-af5c-7592a75a875c",
+                                           "sequence":  0,
+                                           "score":  0.89935897435897427
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-028",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  1,
+                          "latencyMs":  65.043,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "7238abdf-0e0a-4e37-8b2f-de07a8bd01df",
+                                           "sequence":  0,
+                                           "score":  1
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "96e2a56a-d54b-4093-84fd-1ccbf35c4188",
+                                           "sequence":  0,
+                                           "score":  0.98387096774193539
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "1a0a3bcf-4f7d-450b-92cf-db0696535ce5",
+                                           "sequence":  0,
+                                           "score":  0.93846153846153835
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "a887c79c-897b-4f02-8fe0-6d71eb3adea8",
+                                           "sequence":  0,
+                                           "score":  0.9242424242424242
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "51cf64b7-6a8c-46eb-9c9f-3e0639b56526",
+                                           "sequence":  0,
+                                           "score":  0.89464137645107789
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-029",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  1,
+                          "latencyMs":  58.207,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "340352a0-1c91-40d9-beaa-993f141bc8b4",
+                                           "sequence":  0,
+                                           "score":  1
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "51f9ad4a-8932-44b5-9acb-cd4afd99f732",
+                                           "sequence":  0,
+                                           "score":  0.93799603174603163
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "0c2e3655-e755-47a0-8d76-56c7039d4108",
+                                           "sequence":  0,
+                                           "score":  0.9248993129590144
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "7238abdf-0e0a-4e37-8b2f-de07a8bd01df",
+                                           "sequence":  0,
+                                           "score":  0.923747859589041
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "79d87dcf-10b4-46d1-82e7-7a9e5a576639",
+                                           "sequence":  0,
+                                           "score":  0.917314990512334
+                                       }
+                                   ]
+                      },
+                      {
+                          "questionKey":  "q-030",
+                          "recallAt5":  1,
+                          "firstRelevantRank":  1,
+                          "latencyMs":  62.843,
+                          "top5":  [
+                                       {
+                                           "rank":  1,
+                                           "documentId":  "d9dd8f72-8f2e-41ea-9612-138fa4f38d7c",
+                                           "sequence":  0,
+                                           "score":  1
+                                       },
+                                       {
+                                           "rank":  2,
+                                           "documentId":  "0fb2dbc9-db5e-4b29-badd-7544a83ede89",
+                                           "sequence":  0,
+                                           "score":  0.91876185958254264
+                                       },
+                                       {
+                                           "rank":  3,
+                                           "documentId":  "83f933ec-2e89-4f00-9924-0ae6a420b5e5",
+                                           "sequence":  0,
+                                           "score":  0.917314990512334
+                                       },
+                                       {
+                                           "rank":  4,
+                                           "documentId":  "37fd8b8b-0f81-4785-92ae-86fbe73821f4",
+                                           "sequence":  0,
+                                           "score":  0.91216608594657356
+                                       },
+                                       {
+                                           "rank":  5,
+                                           "documentId":  "2d58d3bf-2d9d-46f4-9246-ccc81ab1c9ab",
+                                           "sequence":  0,
+                                           "score":  0.90069296375266517
+                                       }
+                                   ]
+                      }
+                  ]
+}

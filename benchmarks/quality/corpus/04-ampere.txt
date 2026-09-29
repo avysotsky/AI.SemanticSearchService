@@ -1,0 +1,3 @@
+The ampere, symbol A, is the SI base unit of electric current. Its definition fixes the elementary charge at 1.602 176 634 × 10^-19 coulomb.
+
+Provenance: BIPM, The International System of Units (SI Brochure), 9th edition, version 3.01 (2025), https://doi.org/10.59161/AUEZ1291

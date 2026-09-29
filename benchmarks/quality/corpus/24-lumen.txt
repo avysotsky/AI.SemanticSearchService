@@ -1,0 +1,3 @@
+The lumen, symbol lm, is the named SI derived unit of luminous flux. One lumen equals one candela steradian.
+
+Provenance: BIPM, The International System of Units (SI Brochure), 9th edition, version 3.01 (2025), https://doi.org/10.59161/AUEZ1291

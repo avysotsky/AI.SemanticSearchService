@@ -1,0 +1,3 @@
+The kelvin, symbol K, is the SI base unit of thermodynamic temperature. Its definition fixes the Boltzmann constant at 1.380 649 × 10^-23 joules per kelvin.
+
+Provenance: BIPM, The International System of Units (SI Brochure), 9th edition, version 3.01 (2025), https://doi.org/10.59161/AUEZ1291

@@ -1,0 +1,3 @@
+The pascal, symbol Pa, is the named SI derived unit of pressure and stress. One pascal equals one newton per square metre.
+
+Provenance: BIPM, The International System of Units (SI Brochure), 9th edition, version 3.01 (2025), https://doi.org/10.59161/AUEZ1291

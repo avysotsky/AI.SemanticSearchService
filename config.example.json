@@ -1,6 +1,6 @@
 {
   "ConnectionStrings": {"PostgreSql": "Host=192.168.0.102;Port=55432;Database=replace_me;Username=replace_me;Password=replace_me;Timeout=5;Command Timeout=15"},
-  "Embeddings": {"ModelPath": "D:\\AI.Models\\multilingual-e5-base", "MaxTokenLength": 512},
-  "Search": {"DefaultLimit": 10, "MaximumLimit": 50, "CommandTimeoutSeconds": 15, "VectorWeight": 0.75, "TextWeight": 0.25}
+  "Embeddings": {"ModelPath": "D:\\AI.Models\\multilingual-e5-base", "MaxTokenLength": 512, "MaximumConcurrency": 1},
+  "Search": {"DefaultLimit": 10, "MaximumLimit": 50, "CommandTimeoutSeconds": 15, "CandidateLimit": 100, "RrfK": 60, "VectorWeight": 0.5, "TextWeight": 0.5}
 }
 

@@ -1,0 +1,615 @@
+{
+  "version": "si-brochure-v1",
+  "provenance": {
+    "kind": "project-authored controlled factual corpus",
+    "sourceTitle": "BIPM, The International System of Units (SI Brochure), 9th edition, version 3.01 (2025)",
+    "sourceUri": "https://doi.org/10.59161/AUEZ1291",
+    "authorship": "Benchmark document wording and questions were authored for this repository from the cited source.",
+    "judgmentMethod": "Deterministic document/chunk targets. Every short TXT document is expected to produce exactly ingestion chunk sequence 0. No human relevance review is claimed.",
+    "limitations": "Controlled one-fact documents; not representative of production document length or domain distribution."
+  },
+  "documents": [
+    {
+      "key": "second",
+      "path": "corpus/01-second.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "second",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "metre",
+      "path": "corpus/02-metre.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "metre",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "kilogram",
+      "path": "corpus/03-kilogram.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "kilogram",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "ampere",
+      "path": "corpus/04-ampere.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "ampere",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "kelvin",
+      "path": "corpus/05-kelvin.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "kelvin",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "mole",
+      "path": "corpus/06-mole.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "mole",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "candela",
+      "path": "corpus/07-candela.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "candela",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "radian",
+      "path": "corpus/08-radian.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "radian",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "steradian",
+      "path": "corpus/09-steradian.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "steradian",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "hertz",
+      "path": "corpus/10-hertz.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "hertz",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "newton",
+      "path": "corpus/11-newton.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "newton",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "pascal",
+      "path": "corpus/12-pascal.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "pascal",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "joule",
+      "path": "corpus/13-joule.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "joule",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "watt",
+      "path": "corpus/14-watt.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "watt",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "coulomb",
+      "path": "corpus/15-coulomb.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "coulomb",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "volt",
+      "path": "corpus/16-volt.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "volt",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "farad",
+      "path": "corpus/17-farad.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "farad",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "ohm",
+      "path": "corpus/18-ohm.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "ohm",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "siemens",
+      "path": "corpus/19-siemens.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "siemens",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "weber",
+      "path": "corpus/20-weber.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "weber",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "tesla",
+      "path": "corpus/21-tesla.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "tesla",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "henry",
+      "path": "corpus/22-henry.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "henry",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "degree-celsius",
+      "path": "corpus/23-degree-celsius.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "degree-celsius",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "lumen",
+      "path": "corpus/24-lumen.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "lumen",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "lux",
+      "path": "corpus/25-lux.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "lux",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "becquerel",
+      "path": "corpus/26-becquerel.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "becquerel",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "gray",
+      "path": "corpus/27-gray.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "gray",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "sievert",
+      "path": "corpus/28-sievert.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "sievert",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "katal",
+      "path": "corpus/29-katal.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "katal",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    },
+    {
+      "key": "quetta",
+      "path": "corpus/30-quetta.txt",
+      "contentType": "text/plain",
+      "metadata": {
+        "benchmark": "si-brochure-v1",
+        "topic": "quetta",
+        "source": "BIPM SI Brochure 9th edition v3.01"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "key": "q-001",
+      "text": "Which SI base unit is defined using exactly 9 192 631 770 periods of the caesium-133 transition?",
+      "expected": [
+        {
+          "documentKey": "second",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-002",
+      "text": "Which SI length unit follows from fixing vacuum light speed at 299 792 458 units per second?",
+      "expected": [
+        {
+          "documentKey": "metre",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-003",
+      "text": "Which SI mass unit is realized by fixing the numerical value of the Planck constant?",
+      "expected": [
+        {
+          "documentKey": "kilogram",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-004",
+      "text": "Which SI current unit is based on the fixed elementary charge value?",
+      "expected": [
+        {
+          "documentKey": "ampere",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-005",
+      "text": "Which SI temperature unit is tied to the fixed Boltzmann constant?",
+      "expected": [
+        {
+          "documentKey": "kelvin",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-006",
+      "text": "How many specified entities define the SI amount-of-substance unit, and what is that unit?",
+      "expected": [
+        {
+          "documentKey": "mole",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-007",
+      "text": "Which SI base unit uses the value 683 lumens per watt at 540 terahertz?",
+      "expected": [
+        {
+          "documentKey": "candela",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-008",
+      "text": "What is the coherent SI unit for plane angle?",
+      "expected": [
+        {
+          "documentKey": "radian",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-009",
+      "text": "What coherent SI unit measures solid angle?",
+      "expected": [
+        {
+          "documentKey": "steradian",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-010",
+      "text": "Which named derived unit represents one event per second?",
+      "expected": [
+        {
+          "documentKey": "hertz",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-011",
+      "text": "Which force unit is equivalent to kg m s^-2?",
+      "expected": [
+        {
+          "documentKey": "newton",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-012",
+      "text": "Which named SI unit equals one newton per square metre?",
+      "expected": [
+        {
+          "documentKey": "pascal",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-013",
+      "text": "Which SI energy unit is equivalent to a newton metre?",
+      "expected": [
+        {
+          "documentKey": "joule",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-014",
+      "text": "What SI power unit equals one joule each second?",
+      "expected": [
+        {
+          "documentKey": "watt",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-015",
+      "text": "Which SI electric-charge unit is an ampere second?",
+      "expected": [
+        {
+          "documentKey": "coulomb",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-016",
+      "text": "Which potential-difference unit is equivalent to W/A?",
+      "expected": [
+        {
+          "documentKey": "volt",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-017",
+      "text": "What named SI capacitance unit equals a coulomb per volt?",
+      "expected": [
+        {
+          "documentKey": "farad",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-018",
+      "text": "Which resistance unit is a volt divided by an ampere?",
+      "expected": [
+        {
+          "documentKey": "ohm",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-019",
+      "text": "Which conductance unit is equivalent to an ampere per volt?",
+      "expected": [
+        {
+          "documentKey": "siemens",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-020",
+      "text": "What SI magnetic-flux unit equals V s?",
+      "expected": [
+        {
+          "documentKey": "weber",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-021",
+      "text": "Which SI flux-density unit is a weber per square metre?",
+      "expected": [
+        {
+          "documentKey": "tesla",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-022",
+      "text": "What named SI inductance unit equals Wb/A?",
+      "expected": [
+        {
+          "documentKey": "henry",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-023",
+      "text": "Which named unit has temperature intervals equal in size to kelvin intervals?",
+      "expected": [
+        {
+          "documentKey": "degree-celsius",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-024",
+      "text": "Which luminous-flux unit equals cd sr?",
+      "expected": [
+        {
+          "documentKey": "lumen",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-025",
+      "text": "What SI illuminance unit is a lumen per square metre?",
+      "expected": [
+        {
+          "documentKey": "lux",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-026",
+      "text": "Which named SI unit describes radionuclide activity in reciprocal seconds?",
+      "expected": [
+        {
+          "documentKey": "becquerel",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-027",
+      "text": "Which absorbed-dose unit equals J/kg?",
+      "expected": [
+        {
+          "documentKey": "gray",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-028",
+      "text": "Which named unit expresses dose equivalent, with coherent form J/kg?",
+      "expected": [
+        {
+          "documentKey": "sievert",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-029",
+      "text": "What SI catalytic-activity unit equals mol/s?",
+      "expected": [
+        {
+          "documentKey": "katal",
+          "sequence": 0
+        }
+      ]
+    },
+    {
+      "key": "q-030",
+      "text": "Which SI prefix and symbol denote a factor of ten to the thirtieth power?",
+      "expected": [
+        {
+          "documentKey": "quetta",
+          "sequence": 0
+        }
+      ]
+    }
+  ]
+}

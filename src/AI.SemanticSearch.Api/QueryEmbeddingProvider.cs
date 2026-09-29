@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using Microsoft.Extensions.Options;
 using Microsoft.ML.OnnxRuntime;
 using Microsoft.ML.OnnxRuntime.Tensors;
@@ -15,11 +16,13 @@ public sealed class QueryEmbeddingProvider : IQueryEmbeddingProvider, IDisposabl
     private readonly EmbeddingOptions _options;
     private readonly Tokenizer _tokenizer;
     private readonly InferenceSession _session;
-    private readonly SemaphoreSlim _gate = new(1, 1);
+    private readonly SemaphoreSlim _gate;
+    private readonly object _tokenizerLock = new();
 
     public QueryEmbeddingProvider(IOptions<EmbeddingOptions> options)
     {
         _options = options.Value;
+        _gate = new SemaphoreSlim(_options.MaximumConcurrency, _options.MaximumConcurrency);
         var root = Path.GetFullPath(_options.ModelPath);
         var modelPath = Path.Combine(root, "model.onnx");
         var tokenizerPath = Path.Combine(root, "tokenizer.json");
@@ -36,26 +39,40 @@ public sealed class QueryEmbeddingProvider : IQueryEmbeddingProvider, IDisposabl
     public async Task<float[]> EmbedAsync(string query, CancellationToken cancellationToken)
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(query);
+        IReadOnlyList<uint> tokenIds;
+        lock (_tokenizerLock)
+        {
+            tokenIds = _tokenizer.Encode("query: " + query.Trim(), false).Encodings[0].Ids.ToArray();
+        }
+
+        var contentLength = Math.Min(tokenIds.Count, _options.MaxTokenLength - 2);
+        var sequence = new long[contentLength + 2];
+        sequence[0] = 0;
+        for (var i = 0; i < contentLength; i++) sequence[i + 1] = tokenIds[i];
+        sequence[^1] = 2;
+        var ids = new DenseTensor<long>([1, sequence.Length]);
+        var mask = new DenseTensor<long>([1, sequence.Length]);
+        for (var i = 0; i < sequence.Length; i++) { ids[0, i] = sequence[i]; mask[0, i] = 1; }
+
+        var queueTimer = Stopwatch.StartNew();
         await _gate.WaitAsync(cancellationToken);
+        SearchTelemetry.InferenceQueueDuration.Record(queueTimer.Elapsed.TotalMilliseconds);
+        SearchTelemetry.ActiveInferences.Add(1);
+        var inferenceTimer = Stopwatch.StartNew();
         try
         {
-            var tokenIds = _tokenizer.Encode("query: " + query.Trim(), false).Encodings[0].Ids;
-            var contentLength = Math.Min(tokenIds.Count, _options.MaxTokenLength - 2);
-            var sequence = new long[contentLength + 2];
-            sequence[0] = 0;
-            for (var i = 0; i < contentLength; i++) sequence[i + 1] = tokenIds[i];
-            sequence[^1] = 2;
-            var ids = new DenseTensor<long>([1, sequence.Length]);
-            var mask = new DenseTensor<long>([1, sequence.Length]);
-            for (var i = 0; i < sequence.Length; i++) { ids[0, i] = sequence[i]; mask[0, i] = 1; }
-
             using var results = _session.Run([
                 NamedOnnxValue.CreateFromTensor("input_ids", ids),
                 NamedOnnxValue.CreateFromTensor("attention_mask", mask),
             ]);
             return MeanPoolAndNormalize(results[0].AsTensor<float>().ToArray(), sequence.Length);
         }
-        finally { _gate.Release(); }
+        finally
+        {
+            SearchTelemetry.InferenceDuration.Record(inferenceTimer.Elapsed.TotalMilliseconds);
+            SearchTelemetry.ActiveInferences.Add(-1);
+            _gate.Release();
+        }
     }
 
     public static float[] MeanPoolAndNormalize(ReadOnlySpan<float> values, int tokenCount)

@@ -1,0 +1,3 @@
+The ohm, symbol Ω, is the named SI derived unit of electric resistance. One ohm equals one volt per ampere.
+
+Provenance: BIPM, The International System of Units (SI Brochure), 9th edition, version 3.01 (2025), https://doi.org/10.59161/AUEZ1291

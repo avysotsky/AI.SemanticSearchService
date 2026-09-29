@@ -1,0 +1,3 @@
+The kilogram, symbol kg, is the SI base unit of mass. Its definition fixes the Planck constant at 6.626 070 15 × 10^-34 joule seconds.
+
+Provenance: BIPM, The International System of Units (SI Brochure), 9th edition, version 3.01 (2025), https://doi.org/10.59161/AUEZ1291

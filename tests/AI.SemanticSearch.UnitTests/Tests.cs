@@ -24,4 +24,21 @@ public sealed class Tests
         var request = new SearchRequest("x", Limit: 101, MinScore: 2); var results = new List<ValidationResult>();
         Assert.False(Validator.TryValidateObject(request, new ValidationContext(request), results, true)); Assert.Equal(3, results.Count);
     }
+
+    [Fact]
+    public void RrfScoreIsNormalizedAndRewardsAgreement()
+    {
+        var bothFirst = SearchService.NormalizeRrf(1, 1, 60, 0.5, 0.5);
+        var vectorOnly = SearchService.NormalizeRrf(1, null, 60, 0.5, 0.5);
+        Assert.Equal(1, bothFirst, 12);
+        Assert.InRange(vectorOnly, 0, 1);
+        Assert.True(bothFirst > vectorOnly);
+    }
+
+    [Theory]
+    [InlineData("", "owner")]
+    [InlineData("tenant", "")]
+    [InlineData("__legacy_unassigned__", "owner")]
+    public void ScopeRejectsMissingOrReservedIdentifiers(string tenant, string owner) =>
+        Assert.Throws<ArgumentException>(() => SearchScope.Create(tenant, owner));
 }

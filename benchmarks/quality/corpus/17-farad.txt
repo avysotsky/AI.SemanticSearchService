@@ -1,0 +1,3 @@
+The farad, symbol F, is the named SI derived unit of capacitance. One farad equals one coulomb per volt.
+
+Provenance: BIPM, The International System of Units (SI Brochure), 9th edition, version 3.01 (2025), https://doi.org/10.59161/AUEZ1291

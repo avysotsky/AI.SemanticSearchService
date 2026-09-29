@@ -8,9 +8,17 @@ public sealed class ApiExceptionHandler(ILogger<ApiExceptionHandler> logger) : I
 {
     public async ValueTask<bool> TryHandleAsync(HttpContext httpContext, Exception exception, CancellationToken cancellationToken)
     {
-        var status = exception is ArgumentException ? 400 : 500;
-        if (status == 500) logger.LogError(exception, "Unhandled semantic search error");
-        await Results.Problem(statusCode: status, title: status == 400 ? "Invalid search request" : "Semantic search failed",
+        var status = exception switch
+        {
+            ArgumentException => StatusCodes.Status400BadRequest,
+            OperationCanceledException when httpContext.RequestAborted.IsCancellationRequested => 499,
+            PostgresException { SqlState: PostgresErrorCodes.QueryCanceled } => StatusCodes.Status504GatewayTimeout,
+            TimeoutException => StatusCodes.Status504GatewayTimeout,
+            _ => StatusCodes.Status500InternalServerError,
+        };
+        if (status >= 500) logger.LogError(exception, "Semantic search request failed with status {StatusCode}", status);
+        await Results.Problem(statusCode: status,
+            title: status == 400 ? "Invalid search request" : status == 504 ? "Semantic search timed out" : "Semantic search failed",
             detail: status == 400 ? exception.Message : null).ExecuteAsync(httpContext);
         return true;
     }
@@ -22,7 +30,7 @@ public sealed class PostgreSqlHealthCheck(NpgsqlDataSource dataSource) : IHealth
     {
         try
         {
-            await using var command = dataSource.CreateCommand("SELECT 1 FROM documents d WHERE d.status = 'Ready' LIMIT 1;");
+            await using var command = dataSource.CreateCommand("SELECT d.tenant_id, d.owner_id, d.metadata FROM documents d LIMIT 1;");
             command.CommandTimeout = 3;
             await command.ExecuteScalarAsync(cancellationToken);
             return HealthCheckResult.Healthy();
